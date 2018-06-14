@@ -93,7 +93,7 @@ def f_lock (USERNAME):
     timestamp = datetime.datetime.now()
     krb_field=timestamp.strftime('%Y%m%d%H%M%S')+"Z"
 #modify ldap attributes
-    mod_attrs=[(ldap.MOD_REPLACE,'krbLoginFailedCount',str(4)),(ldap.MOD_REPLACE,'krbLastFailedAuth',krb_field)]
+    mod_attrs=[(ldap.MOD_REPLACE,'krbLoginFailedCount',str(10)),(ldap.MOD_REPLACE,'krbLastFailedAuth',krb_field)]
     conn.modify_s(dn, mod_attrs)
 
     conn.unbind_s()
