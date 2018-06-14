@@ -1,0 +1,6 @@
+LDAP_URL: "ldap:///"
+LDAP_ADM: "cn=admin,dc=test,dc=local"
+LDAP_ADM_PASSW: "passw0rd"
+DC: "dc=test,dc=local"
+REALM: "TEST.LOCAL"
+PRINCIPAL_OU: "cn=TEST.LOCAL,cn=kerberos,ou=kdcroot"
