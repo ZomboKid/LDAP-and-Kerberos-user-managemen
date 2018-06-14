@@ -3,7 +3,7 @@ This utility uses CLI keys:<br/>
 -add/--createkrb <USERNAME> <NEWPASS> - adding principal<br/>
 Example: ./connector_ldap_kdc.py -add alex qwerty123<br/><br/>
 -chpasskrb <USERNAME> <NEWPASS> - changing principal's password<br/>
-Example: ./connector_ldap_kdc.py -chpasskrb alex passw0rd\<br/><br/>
+Example: ./connector_ldap_kdc.py -chpasskrb alex passw0rd<br/><br/>
 -chpass <USERNAME> <OLDPASS> <NEWPASS> - changing LDAP user's password and principal's password<br/>
 Example: ./connector_ldap_kdc.py -chpass alex qwerty123 passw0rd<br/><br/>
 -lock/--lockkrb <USERNAME> - locking user<br/>
